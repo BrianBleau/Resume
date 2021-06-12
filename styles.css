@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: #ffb703;
+  display: flex;
+  font-family: "Lora", "Helvitica", sans-serif;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  height: 100%;
+  width: 33.5%;
+  background-color: #023047;
+  border-right: 0.3em solid #8ecae6;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.sidebar h1 {
+  color: white;
+  margin: 1em auto 0.5em auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  background-image: url(me.jpg);
+  background-size: cover;
+  background-position: top;
+  border: 0.2em solid #ffb703;
+  margin: 0.5em auto;
+}
+
+.sidebar ul {
+  margin: 0.5em auto;
+  text-align: center;
+  height: auto;
+  padding: 0;
+}
+
+.sidebar ul li {
+  display: block;
+  padding: 0.2em;
+}
+
+a {
+  color: white;
+}
+
+.sidebar h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.main {
+  height: 100vh;
+  margin-left: 33.3%;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  width: 64.5%;
+}
+
+.exp {
+  color: white;
+  padding: 1em 1em 1em 1em;
+  margin: 0 0 0.3em 0;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  background-color: #fb8500;
+}
+
+.exp h2 {
+  text-decoration: none;
+}
