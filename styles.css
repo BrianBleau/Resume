@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -10,6 +11,7 @@ body {
   width: 100%;
   background-color: #ffb703;
   display: flex;
+  flex-direction: column;
   font-family: "Lora", "Helvitica", sans-serif;
   overflow-x: hidden;
 }
@@ -72,6 +74,7 @@ a {
   flex-direction: column;
   z-index: -1;
   width: 64.5%;
+  padding: 0 0.5em;
 }
 
 .exp {
@@ -87,4 +90,44 @@ a {
 
 .exp h2 {
   text-decoration: none;
+}
+
+.exp ul {
+  padding-right: 1em;
+}
+
+.exp p {
+  padding-right: 0.5em;
+}
+
+@media (max-width: 550px) {
+  .sidebar {
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-right: 0;
+    border-bottom: 0.3em solid #8ecae6;
+  }
+  .skills {
+    column-count: 2;
+  }
+  .container {
+    display: flex;
+    min-width: 50%;
+    margin: 0 2em;
+  }
+  .main {
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .exp ul {
+    margin: 0.5em 2em;
+  }
+  .exp p {
+    margin: 0 2em;
+  }
 }
